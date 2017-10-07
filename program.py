@@ -1,11 +1,16 @@
+#!/usr/bin/env python3
+
+"""
+Author: Petr Jakubec
+Date: 2017-09-28
+Project: weather client
+Find combinations in a database of flights with a given restrictions
+"""
+
 import requests
 import bs4
 import collections
 
-"""
-For running this CLI Python3 app you need to have requests, bs4, collections modules imported.
-author: Petr Jakubec
-"""
 
 # namedtuple for better control over variables in the output
 WeatherReport = collections.namedtuple('WeatherReport',
