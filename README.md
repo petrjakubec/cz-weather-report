@@ -18,7 +18,8 @@ cd weather_py3/bin
 ```pip install requests beautifulsoup4```
 
 ### Run this app by
-```cd /path/to/our/program/python.py```
+```cd /path/to/our/program.py
+python program.py```
 
 ### Deactivation of virtual environment
 ```deactivate venv```
