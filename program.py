@@ -3,24 +3,8 @@ import bs4
 import collections
 
 """
-This app will give you weather report for entered city.
-It will work properly only with Czech cities which are listed here:
-
 For running this CLI Python3 app you need to have requests, bs4, collections modules imported.
 author: Petr Jakubec
-CC:BY
-
-Create own virtual environment to run this:
-mkdir python_environments
-cd python_environments
-python -m virtualenv
-virtualenv --python=python3 ./weather_py3
-cd weather_py3/bin
-. activate
-pip install requests beautifulsoup4
-
-cd /path/to/our/program/python.py
-deactivate venv
 """
 
 # namedtuple for better control over the output
