@@ -54,7 +54,7 @@ def find_city_and_state_from_location(loc: str):
     parts = loc.split('\n')
     return parts[0].strip()
 
-  
+# munging the response
 def cleanup_text(text: str):
     if not text:
         return text
