@@ -6,18 +6,19 @@ This app will give you weather report for entered city. It will work properly on
 For running this CLI Python3 app you need to have requests, bs4, collections modules imported. You can open CLI and just follow this workflow:
 
 ### Create own virtual environment to run this:
+```
 mkdir python_environments
 cd python_environments
 python -m virtualenv
 virtualenv --python=python3 ./weather_py3
 cd weather_py3/bin
 . activate
-
+```
 ### Installation of non-standard libraries
-pip install requests beautifulsoup4
+```pip install requests beautifulsoup4```
 
 ### Run this app by
-cd /path/to/our/program/python.py
+```cd /path/to/our/program/python.py```
 
 ### Deactivation of virtual environment
-deactivate venv
+```deactivate venv```
