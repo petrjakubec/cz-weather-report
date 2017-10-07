@@ -7,7 +7,7 @@ For running this CLI Python3 app you need to have requests, bs4, collections mod
 author: Petr Jakubec
 """
 
-# namedtuple for better control over the output
+# namedtuple for better control over variables in the output
 WeatherReport = collections.namedtuple('WeatherReport',
                                        'cond, temp, scale, loc')
 
@@ -25,13 +25,14 @@ def main():
         report.cond
     ))
 
-
+# getting the plain html
 def get_html_from_web(city):
     url = 'https://www.wunderground.com/weather/cz/{}'.format(city)
     response = requests.get(url)
 
     return response.text
 
+# parsing and cleaning the html 
 def get_weather_from_html(html):
 
     soup = bs4.BeautifulSoup(html, 'html.parser')
@@ -48,10 +49,12 @@ def get_weather_from_html(html):
     report = WeatherReport(cond=condition, temp=temp, scale=scale, loc=loc)
     return report
 
+# munging the location
 def find_city_and_state_from_location(loc: str):
     parts = loc.split('\n')
     return parts[0].strip()
 
+  
 def cleanup_text(text: str):
     if not text:
         return text
